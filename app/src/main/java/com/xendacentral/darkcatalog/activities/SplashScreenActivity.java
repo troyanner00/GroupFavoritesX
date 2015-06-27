@@ -1,10 +1,12 @@
-package com.xendacentral.darkcatalog;
+package com.xendacentral.darkcatalog.activities;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.xendacentral.darkcatalog.R;
 
 
 public class SplashScreenActivity extends ActionBarActivity {
