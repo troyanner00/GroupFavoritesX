@@ -16,6 +16,7 @@ public class ItemActivity extends AppCompatActivity {
     TextView nameTextView;
     ImageView pictureImageView;
     Button backButton;
+    TextView shortBioTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,8 @@ public class ItemActivity extends AppCompatActivity {
         nameTextView = (TextView) findViewById(R.id.nameTextView);
         pictureImageView = (ImageView) findViewById(R.id.pictureImageView);
         nameTextView.setText(bundle.getString("firstName") + " " + bundle.getString("lastName"));
+        shortBioTextView = (TextView) findViewById(R.id.shortBioTextView);
+        shortBioTextView.setText(bundle.getString("shortBio"));
         pictureImageView.setImageResource(Integer.parseInt(bundle.getString("pictureUrl")));
         backButton = (Button) findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +35,12 @@ public class ItemActivity extends AppCompatActivity {
                 finish();
             }
         });
+//        findViewById(R.id.backButton).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(ItemActivity.this, CatalogActivity.class));
+//            }
+//        });
 
     }
 

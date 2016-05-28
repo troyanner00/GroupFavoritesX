@@ -33,15 +33,30 @@
             android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/shortBioTextView"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/nameTextView"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Back"
             android:id="@+id/backButton"
-            android:layout_below="@+id/nameTextView"
+            android:layout_below="@+id/shortBioTextView"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="61dp" />
 

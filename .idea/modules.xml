@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DarkCatalog.iml" filepath="$PROJECT_DIR$/DarkCatalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TechIconsApp.iml" filepath="$PROJECT_DIR$/TechIconsApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

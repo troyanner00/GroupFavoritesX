@@ -57,8 +57,12 @@ public class CatalogActivity extends AppCompatActivity {
 
   public void initializeData() {
     people = new ArrayList<>();
-    people.add(new Person("Steve", "Jobs", Integer.toString(R.mipmap.ic_jobs_launcher)));
-    people.add(new Person("Steve", "Wozniak", Integer.toString(R.mipmap.ic_wozniak_launcher)));
+    people.add(new Person("Steve", "Jobs", Integer.toString(R.mipmap.ic_jobs_launcher),
+        "xSteve Jobs met Steve Wozniak while in high school and in 1976, they started Apple Computers. Jobs oversaw the development of revolutionary products like the iPhone and iPad."));
+    people.add(new Person("Steve", "Wozniak", Integer.toString(R.mipmap.ic_wozniak_launcher),
+        "Steve Wozniak is the co-founder of Apple Computers. Wozniak has always been credited with being the main designer of the first Apples."));
+    people.add(new Person("Bill", "Gates", Integer.toString(R.mipmap.ic_gates_launcher), "Bill Gates and his partner Paul Allen built the world's largest software business, Microsoft."));
+    people.add(new Person("Mark", "Zuckerberg", Integer.toString(R.mipmap.ic_zuckerberg_launcher),"Mark Zuckerberg was the Harvard computer science student who along with a few friends launched the world's most popular social networking website called Facebook in February 2004."));
 
 
   }

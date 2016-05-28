@@ -7,10 +7,12 @@ public class Person {
     String firstName;
     String lastName;
     String pictureUrl;
+    String shortBio;
 
-    public Person(String firstName, String lastName, String pictureUrl) {
+    public Person(String firstName, String lastName, String pictureUrl, String shortBio) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.pictureUrl = pictureUrl;
+        this.shortBio = shortBio;
     }
 }

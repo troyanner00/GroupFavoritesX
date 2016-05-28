@@ -50,7 +50,8 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
     public void onBindViewHolder(ViewHolder holder, final int position) {
         holder.nameTextView.setText(people.get(position).firstName + " " +
                                     people.get(position).lastName);
-        holder.pictureImageView.setImageResource(Integer.parseInt(people.get(position).pictureUrl));
+        holder.pictureImageView.setImageResource(
+            Integer.parseInt(people.get(position).pictureUrl));
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,6 +61,7 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
                 bundle.putString("firstName", people.get(position).firstName);
                 bundle.putString("lastName", people.get(position).lastName);
                 bundle.putString("pictureUrl", people.get(position).pictureUrl);
+                bundle.putString("shortBio", people.get(position).shortBio);
                 itemIntent.putExtras(bundle);
                 view.getContext().startActivity(itemIntent);
             }
